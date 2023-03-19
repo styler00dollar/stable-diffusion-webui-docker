@@ -16,12 +16,13 @@ RUN pip install blendmodes accelerate==0.15.0 basicsr fonts font-roboto gfpgan g
     gast==0.4.0 keras==2.10.0 libclang==15.0.6.1 library opt-einsum==3.3.0 Keras-Preprocessing==1.1.2 joblib==1.2.0 opencv-contrib-python opencv-python==4.7.0.68 gdown==4.6.4 \
     easygui==0.98.3  PySocks==1.7.1   qudida==0.0.4  scikit-learn==1.2.2  sentencepiece==0.1.97  soupsieve==2.4 tensorflow==2.10.1 tensorflow-estimator==2.10.0 \
     tensorflow-io-gcs-filesystem==0.31.0 termcolor==2.2.0 threadpoolctl==3.1.0 toml==0.10.2 voluptuous==0.13.1 wcwidth==0.2.6 wrapt==1.15.0 zipp==3.15.0 \
-    tensorboard==2.10.1 altair==4.2.2 fairscale==0.4.13 huggingface-hub==0.12.0 GitPython
+    tensorboard==2.10.1 altair==4.2.2 fairscale==0.4.13 huggingface-hub==0.12.0 GitPython lion_pytorch
 
 RUN git config --global --add safe.directory /workspace/repositories/stable-diffusion-stability-ai
 RUN git config --global --add safe.directory /workspace/repositories/taming-transformers
 RUN git config --global --add safe.directory /workspace/repositories/k-diffusion
 RUN git config --global --add safe.directory /workspace/repositories/CodeFormer
 RUN git config --global --add safe.directory /workspace/repositories/BLIP
+RUN git config --global --add safe.directory /workspace/kohya-trainer
 
 EXPOSE 8080
